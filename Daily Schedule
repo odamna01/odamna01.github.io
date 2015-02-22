@@ -1,0 +1,46 @@
+< table>
+<tr>
+        <th> Time </th>
+        <th> Monday </th>
+        <th> Tuesday </th>
+        <th> Wednesday </th>
+        <th> Thursday </th>
+        <th> Friday </th>
+</tr>
+<tr> 
+    <td> 8am </td>
+    <td> 8:15</td>
+    <td> 8:30</td>
+    <td> 8:45</td>
+    <td> 9:00</td>
+    <td> 9:15</td>
+    <td> 9:30</td>
+    <td> 9:45</td>
+    <td> 10:00</td>
+    <td> 10:15</td>
+    <td> 10:30</td>
+    <td> 10:45</td>
+    <td> 11:00</td>
+    <td> 11:15</td>
+    <td> 11:30</td>
+    <td> 11:45</td>
+    <td> 12:00</td>
+    <td> 12:15</td>
+    <td> 12:30</td>
+    <td> 12:45</td>
+    <td> 1:00</td>
+    <td> 1:15</td>
+    <td> 1:30</td>
+    <td> 1:45</td>
+    <td> 2:00</td>
+    <td> 2:15</td>
+    <td> 2:30</td>
+    <td> 2:45</td>
+    <td> 3:00</td>
+    <td> 3:15</td>
+    <td> 3:30</td>
+    <td> 3:45</td>
+    <td> 4:00</td>
+</table>
+    
+    
