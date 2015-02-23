@@ -1,6 +1,6 @@
 <h1> My Schedule</h1>
 <style> 
-table, th, td {
+table, th {
         border-style: solid;
         border-width: 3px;
 }
@@ -57,11 +57,11 @@ table, th, td {
     <td> 10:45</td> </tr>
     <tr>
     <td> 11:00</td>
-    <td> CS 130</td>
-    <td> MGT 352</td>
-    <td> CS 130</td>
-    <td> MGT 352</td>
-    <td> CS 130</td>
+    <td rowspan=4> CS 130</td>
+    <td rowspan=6> MGT 352</td>
+    <td rowspan=4> CS 130</td>
+    <td rowspan=6> MGT 352</td>
+    <td rowspan=4> CS 130</td>
     </tr>
     <tr><td> 11:15</td> </tr>
     <tr>
@@ -86,12 +86,19 @@ table, th, td {
     <tr><td> 1:15</td> </tr>
     <tr>
     <td> 1:30</td> 
-        <td> Econ 361 </td>    
+        <td rowspan=4> Econ 361 </td> 
+        <td></td>
+        <td rowspan=4> Econ 361</td>
+        <td></td>
+        <td rowspan=4> Econ 361</td>
     </tr>
     <tr><td> 1:45</td> </tr>
     <tr><td> 2:00</td> </tr>
     <tr><td> 2:15</td> </tr>
     <tr><td> 2:30</td>
+    <td> </td>
+    <td> EPL 450</td>
+    <td></td>
     <td> EPL 450</td>
             
     </tr>
@@ -102,7 +109,8 @@ table, th, td {
     <tr><td> 3:45</td> </tr>
     <tr> <td> 4:00</td> </tr>
     <tr> <td> 4:15</td>
-    <td> Campus Life Meeting</td>
+    <td> </td>
+    <td rowspan=4> Campus Life Meeting</td>
     </tr>
     <tr> <td> 4:30</td> </tr>
     <tr> <td> 4:45</td> </tr>
