@@ -3,11 +3,12 @@ table, th {
         border-style: solid;
         border-width: 3px;
         border-color: blue;
-        background-color:#B5CEFF;
+        background-color:#D6E4FF;
+        
 
 }
 td {
-        border: 1px solid;
+        border: 1px solid white;
 }
         .cs {
                 background-color:#FFCC66 ;
