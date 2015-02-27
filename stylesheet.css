@@ -1,4 +1,4 @@
-<style> 
+body {
 table, th {
         border-style: solid;
         border-width: 3px;
@@ -7,5 +7,12 @@ table, th {
 td {
         border: 1px solid;
 }
-        
-</style>
+        .cs {
+                background-color:#FFCC66 ;
+                margin: auto;
+        }
+        .mgt {
+                background-color: #EB99D6;
+                margin: auto;
+        }
+
