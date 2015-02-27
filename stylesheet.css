@@ -3,6 +3,9 @@ table, th {
         border-style: solid;
         border-width: 3px;
         border-color: blue;
+        background-color: #FFD6F5
+
+;
 }
 td {
         border: 1px solid;
@@ -26,4 +29,13 @@ td {
         .econ { 
                 background-color: #00FF00;
                 margin:auto;
+}
+.cl {
+     background-color: #4DB8B8;   
+}
+.btq {
+        background-color:#990099;
+}
+.gym { 
+        background-color:#5C8533;
 }
