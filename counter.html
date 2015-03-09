@@ -15,11 +15,11 @@
         
         <script>
             r= function() {
-                number=thebox.document.querySelector("#thebox");
-                temperature=number.value;
+                thebox=document.querySelector("#thebox");
+                temperature=thebox.value;
             fahr= temperature*1.8+32;
             answer=document.querySelector("#result");
-            answer.innerHTML="result";
+            answer.innerHTML=fahr;
             }
             </script>
         </body>
