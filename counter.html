@@ -6,17 +6,19 @@
    
       <body>
       <title> Temperature Conversion</title>
-      <h2> COnvert from Celcius to Fahrenheit</h2>
+      <h2> Convert from Celcius to Fahrenheit</h2>
         <label for="thebox">Celcius</label>
-        <input type="text" id="convert">
-        <button onclick="convert();">Convert<button>
-        <h1 id="convert"></h1>
+        <input type="text" id="thebox">
+        <button onclick="result();">Convert<button>
+        <h1 id="result"></h1>
         
         <script>
             convert= function() {
-            fahr= celcius*1.8+32
-            thebox.document.querySelector("#convert");
-            thebox.innerHTML=fahr;
+                number=thebox.document.querySelector("#thebox");
+                temperature=number.value
+            fahr= temperature*1.8+32;
+            answer=document.querySelector("#result");
+            answer.innerHTML=fahr;
             }
             </script>
         </body>
