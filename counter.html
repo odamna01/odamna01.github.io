@@ -13,9 +13,9 @@
         <h1 id="result"></h1>
         
         <script>
-            convert= function() {
+            result= function() {
                 number=thebox.document.querySelector("#thebox");
-                temperature=number.value
+                temperature=number.value;
             fahr= temperature*1.8+32;
             answer=document.querySelector("#result");
             answer.innerHTML=fahr;
