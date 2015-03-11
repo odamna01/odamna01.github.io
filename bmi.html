@@ -3,11 +3,16 @@
  <body> 
    
    <p id="count"> </p>
+    <input type="range" min=0 max=255 id="redi" onchange="changeColor()" value="255" /> <br>
+     <label for="greeni">Green:</label>
+     <input type="range" min=0 max=255 id="greeni" onchange="changeColor()" value="255" /><br>
+   
+   
   <label for="textbox1"> Weight </label>
-  <input type="text" id="textbox">
+  <input type="range" min=0 max=500  id="textbox" oncharge="bmi()"/>
   <br>
   <label for="textbox2"> Height</label>
-  <input type="text" id="textbox1">
+  <input type="range" min=0 max= 200 id="textbox1"/>
   
   <h1 id="result"</h1>
   
@@ -16,7 +21,7 @@
   <script> 
     bmi=function() {
       calculate=textbox.value;
-      bmi=calculate*703/textbox2*textbox2
+      bmi=calculate*703/"textbox2"*"textbox2"
       textbox1=document.querySelector("#result");
       textbox1.innerHTML=bmi;
       
