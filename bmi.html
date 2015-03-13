@@ -6,45 +6,49 @@
    
    
   <label for="textbox1"> Weight </label>
-  <input type="range" min=0 max=500  id="textbox" oncharge="bmi()"/>
+  <input type="range" min=0 max=500  id="textbox" onmousemove="bmi()"/>
   <br>
   <label for="textbox2"> Height</label>
-  <input type="range" min=0 max= 200 id="textbox1" oncharge="bmi()"/>
+  <input type="range" min=0 max= 200 id="textbox1" onmousemove="bmi()"/>
   
-  <h1 id="result"</h1>
-  <h1 id="message"> </h1>
+  <h1 id="result"></h1>
+  <h1 id="message"></h1>
   
   
   
   <script> 
     bmi=function() {
-      calculate=textbox.value;
-      bmi=calculate*703/("textbox2"*"textbox2")
-      textbox1=document.querySelector("#result");
-      textbox1.innerHTML=bmi;
+      textbox=document.querySelector("#textbox")
+      weight=textbox.value;
+      textbox1=document.querySelector("#textbox1")
+      height=textbox1.value;
       
-      textbox2=document.querySelector("#textbox1")
-      textbox1.innerHTML=bmi;
+      bmi=weight*703/(height*height)
       
+      result=document.querySelector("#result");
+      result.innerHTML=bmi;
       
-    }
-    
-    if (bmi<19) {
+      if (bmi<19) {
             message = document.querySelector("#message");
             message.innerHTML="Too Low";
-             message.style.backgroundColor="red";  
+            message.style.backgroundColor="red";  
             }
             
-            if (bmi>19 && t1<24) {
+      if (bmi>=19 && t1<=24) {
                 message = document.querySelector("#message");
                 message.innerHTML="Okay";
                 message.style.backgroundColor="lightblue";
             }
             
-            if (bmi>24) {
+      if (bmi>24) {
                 message = document.querySelector("#message");
                 message.innerHTML="High";
                 message.style.backgroundColor="lightpink";
+      
+      
+    }
+    
+
      
      window.onload = bmi;
   </script>
