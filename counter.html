@@ -13,6 +13,7 @@
         <button onclick="r();">Convert</button>
        
         <h1 id="result"></h1>
+        <h1 id="message"> </h1>
         
         
         <script>
@@ -23,7 +24,24 @@
             answer=document.querySelector("#result");
             answer.innerHTML=fahr;
             
-            document.body.style.backgroundColor=blue;
+            document.body.style.backgroundColor="blue";
+            
+             if (f>90) {
+            message = document.querySelector("#message");
+            message.innerHTML="Too Hot";
+             message.style.backgroundColor="red";  
+            }
+            
+            if (f<35) {
+                message = document.querySelector("#message");
+                message.innerHTML="Too Cold";
+                message.style.backgroundColor="lightblue";
+            }
+            
+            if (f>=35 && f<=90) {
+                message = document.querySelector("#message");
+                message.innerHTML="OK";
+               message.style.backgroundColor="yellow";
             }
             </script>
         </body>
