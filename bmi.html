@@ -12,6 +12,7 @@
   <input type="range" min=0 max= 200 id="textbox1" oncharge="bmi()"/>
   
   <h1 id="result"</h1>
+  <h1 id="message"> </h1>
   
   <button onclick="bmi();">Calculate</button>
   
@@ -28,6 +29,22 @@
       
     }
     
+    if (bmi<19) {
+            message = document.querySelector("#message");
+            message.innerHTML="Too Low";
+             message.style.backgroundColor="red";  
+            }
+            
+            if (bmi>19 && t1<24) {
+                message = document.querySelector("#message");
+                message.innerHTML="Okay";
+                message.style.backgroundColor="lightblue";
+            }
+            
+            if (bmi>24) {
+                message = document.querySelector("#message");
+                message.innerHTML="High";
+                message.style.backgroundColor="lightpink";
     
   </script>
   
