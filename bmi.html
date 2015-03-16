@@ -6,10 +6,10 @@
    
    
   <label for="textbox1"> Weight </label>
-  <input type="range" min=0 max=500  id="textbox"  onmousemove="bmi();" value="150">
+  <input type="range" min=0 max=500  id="textbox"  onmousemove="calculateBMI();" value="150">
   <br>
   <label for="textbox2"> Height</label>
-  <input type="range" min=0 max=200 id="textbox1"  onmousemove="bmi();" value="70">
+  <input type="range" min=0 max=200 id="textbox1"  onmousemove="calculateBMI();" value="70">
   
   <h1 id="result"></h1>
   <h1 id="message"></h1>
@@ -18,8 +18,8 @@
   
   <script> 
   
-    bmi=function() {
-     alert("hello");
+    calculateBMI=function() {
+     
       textbox=document.querySelector("#textbox");
       weight=textbox.value;
       textbox1=document.querySelector("#textbox1");
@@ -52,7 +52,7 @@
     
 }
      
-     window.onload = bmi;
+     window.onload = calculateBMI;
   </script>
   
   
