@@ -18,14 +18,14 @@
     <body>
     <label for = "thebox">
     <input type="text">
-     <button onclick="increase()";>click to add</button>
+     <button onclick="addtolist()";>click to add</button>
         <ul id="list"></ul>
         
             <script>
              
                 var count="thebox";
                 
-                increase= function() {
+                addtolist= function() {
                     count="thebox";
                     output= document.querySelector("#list");
                     newli=document.createElement("li");
