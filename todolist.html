@@ -8,8 +8,23 @@
                 font-family:fantasy;
                 font-size:24px;
             }
-                .makered { color:red;
+                .markoff {
                     text-decoration:line-through;
+                }
+                .Red { color:red;
+                }
+                .Blue{color:blue;
+                }
+                .Yellow {color:yellow;
+                }
+                
+                
+                <select id="pickcolor">
+            <option> Red </option>
+            <option> Blue</option>
+            <option> Yellow </option>
+        </select>
+            
                     
                     
                 }
@@ -43,15 +58,20 @@
                     te = document.createTextNode(count);
                     newli.appendChild(te);
                     
+                    color=document.querySelector("#pickcolor");
+                    theIndex=color.selectedIndex;
+                    theoption=color.options[theIndex];
+                    thecolor=theoption.value;
+                    
                     cb.onclick=select;
                     
                     list.appendChild(newli);
                 }
                 select= function() {
                   if  (this.checked)
-                    this.parentNode.classList.add("makered");
+                    this.parentNode.classList.add("markoff");
                  else
-                     this.parentNode.classList.remove("makered");
+                     this.parentNode.classList.remove("markoff");
                 }
                 </script>
                     
