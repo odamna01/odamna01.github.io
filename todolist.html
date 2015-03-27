@@ -3,6 +3,7 @@
    <head>
         <style>
         background-color: lightblue;
+        
             li{
                 list-style:none;
                 font-family:fantasy;
@@ -19,7 +20,6 @@
                 }
                 
                 
-               
             
                     
                     
@@ -36,7 +36,7 @@
         </select>
     
     <label for = "thebox">
-    <input type="text">
+    <input id="itembox" type="text">
      <button onclick="addtolist()";>click to add</button>
         <ul id="list"></ul>
         <br>
@@ -44,15 +44,15 @@
         
             <script>
              
-                var count=thebox;
                 
                 clear=function() {
-                   value=document.querySelector(" ")
+                   thelist=document.querySelector("#list")
+                   thelist.innerHTML=""
                 }
                 
                 addtolist= function() {
                    
-                   thebox=document.querySelector.value
+                   thebox=document.querySelector("#itembox")
                     count=thebox.value;
                     output= document.querySelector("#list");
                     newli=document.createElement("li");
