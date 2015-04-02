@@ -2,8 +2,15 @@
 <head>
 
 <style>
- table, th, td {
+
+ #fn,#ln,#phone,#email { 
+  display:block;
+}
+ table {
     border: solid 2px;
+ }
+ td {
+  border: dotted 1px, red;
  }
 </style>
 
@@ -37,12 +44,6 @@
         <th> E-Mail</th>
         </tr>
         
-        <tr>
-         <td> </td>
-         <td> </td>
-         <td> </td>
-         <td> </td>
-        </tr>
         </table>
         
          <script>
@@ -55,23 +56,36 @@
                 ph=document.querySelector("#ph").value
                 em=document.querySelector("#em").value
                 
-                    list=document.querySelector("#count");
-                    firstentry=document.querySelector("#fn");
-                    last=document.querySelector("#ln");
                     
-                    
-                    lastone = list.document.lastChild;
-                    firstentry = lastone.innerHTML;
-                    ps = lastone.previousSibling;
-                    secondentry = ps.innerHTML;
-                    
-                    nextentry = parseInt(firstentry), parseInt(secondentry)
-                    
-                    newitem = document.createElement("li");
+                    newitem = document.createElement("tr");
                     newitem = innerHTML=nextentry;
+                    td1=document.createElement("td"); 
+                    td1.innerHTML=fn; td1.onclick=editfn; 
+                    td2=document.createElement("td");
+                    td2.innerHTML=ln; 
+                    td3=document.createElement("td");
+                    td3.innerHTML=phone; 
+                    td4=document.createElement("td"); 
+                    td4.innerHTML=email;
                     
+                    newitem.appendChild(td1); 
+                    newitem.appendChild(td2); 
+                    newitem.appendChild(td3); 
+                    newitem.appendChild(td4); 
+                    table=document.querySelector("#addresstable"); 
+                    table.appendChild(newitem);
                     
- 
+                    document.querySelector("#fn").value="";
+                    document.querySelector("#ln").value=""; 
+                    document.querySelector("#phone").value="";
+                    document.querySelector("#email").value="";
+                    
+                }
+                 editfn=function(){ 
+                  fn=document.querySelector("#fn").value; 
+                  this.innerHTML=fn; 
+                    
+                 }
  
  
  
