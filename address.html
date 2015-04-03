@@ -3,7 +3,7 @@
 
 <style>
 
- #fn,#ln,#phone,#email { 
+ #fn,#ln,#phone,#em { 
   display:block;
 }
  table {
@@ -21,20 +21,21 @@
  <button onclick="addentry()";>Click To Add</button>
         <h1> My List </h1>
         
+        <label for="fn">First Name</label>
+    <input type="text" id="fn">
+    <br>
+    <label for="ln">Last Name</label>
+    <input type="text" id="ln">
+    <br>
+    <label for="phone">Phone Number</label>
+    <input type="text" id="phone">
+    <br>
+    <label for="em">EMail Address</label>
+    <input type="text" id="em">
+    
         
         
         
-        <label for = "thebox"> First Name</label>
-        <input id="fn" type = "text">
-        <br>
-        <label for = "thebox"> Last Name</label>
-        <input id="ln" type = "text">
-        <br>
-        <label for = "thebox"> Phone Number</label>
-        <input id="ph" type = "text">
-        <br>
-         <label for = "thebox"> Email Address</label>
-        <input id="em" type = "text">
         
         <table id="address"> 
         <tr>
@@ -58,16 +59,19 @@
                 
                     
                     newitem = document.createElement("tr");
-                    newitem = innerHTML=nextentry;
+                    newitem.innerHTML=nextentry;
                     td1=document.createElement("td"); 
                     td1.innerHTML=fn;
                     td1.onclick=editfn; 
                     td2=document.createElement("td");
-                    td2.innerHTML=ln; 
+                    td2.innerHTML=ln;
+                    td2.onclick=editfn;
                     td3=document.createElement("td");
-                    td3.innerHTML=phone; 
+                    td3.innerHTML=phone;
+                    td3.onclick=editfn;
                     td4=document.createElement("td"); 
                     td4.innerHTML=email;
+                    td4.onclick=editfn;
                     
                     newitem.appendChild(td1); 
                     newitem.appendChild(td2); 
@@ -85,12 +89,18 @@
                  editfn=function(){ 
                   fn=document.querySelector("#fn").value; 
                   this.innerHTML=fn; 
+                  ln=document.querySelector("#ln").value; 
+                  this.innerHTML=ln;
+                  ph=document.querySelector("#ph").value; 
+                  this.innerHTML=ph;
+                  em=document.querySelector("#em").value; 
+                  this.innerHTML=em;
                     
                  }
  
  
  
- 
+ </script>
  
  
 </body>
