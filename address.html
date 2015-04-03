@@ -28,7 +28,7 @@
     <input type="text" id="ln">
     <br>
     <label for="phone">Phone Number</label>
-    <input type="text" id="phone">
+    <input type="text" id="ph">
     <br>
     <label for="em">EMail Address</label>
     <input type="text" id="em">
@@ -54,7 +54,7 @@
                 
                 fn=document.querySelector("#fn").value
                 ln=document.querySelector("#ln").value
-                ph=document.querySelector("#phone").value
+                ph=document.querySelector("#ph").value
                 em=document.querySelector("#em").value
                 
                     
@@ -82,8 +82,8 @@
                     
                     document.querySelector("#fn").value="";
                     document.querySelector("#ln").value=""; 
-                    document.querySelector("#phone").value="";
-                    document.querySelector("#email").value="";
+                    document.querySelector("#ph").value="";
+                    document.querySelector("#em").value="";
                     
                 }
                  editfn=function(){ 
@@ -91,7 +91,7 @@
                   this.innerHTML=fn; 
                   ln=document.querySelector("#ln").value; 
                   this.innerHTML=ln;
-                  phone=document.querySelector("#phone").value; 
+                  ph=document.querySelector("#ph").value; 
                   this.innerHTML=ph;
                   em=document.querySelector("#em").value; 
                   this.innerHTML=em;
