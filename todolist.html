@@ -17,11 +17,11 @@
                 .markoff {
                     text-decoration:line-through;
                 }
-                .Red { color:red;
+                .Urgent { color:red;
                 }
-                .Blue{color:blue;
+                .Important{color:blue;
                 }
-                .Purple {color:purple;
+                .LowPriority {color:purple;
                 }
                 
                 
@@ -35,9 +35,9 @@
     <body>
     
      <select id="pickcolor">
-            <option> Red </option>
-            <option> Blue</option>
-            <option> Purple </option>
+            <option> Urgent </option>
+            <option> Important</option>
+            <option> LowPriority </option>
         </select>
     
     <label for = "thebox">
@@ -51,7 +51,7 @@
              
                 
                 clear=function() {
-                   thelist=document.querySelector("#list")
+                   thelist=document.querySelector("#list");
                    thelist.innerHTML="";
                 }
                 
