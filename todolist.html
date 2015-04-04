@@ -45,14 +45,12 @@
      <button onclick="addtolist()";>click to add</button>
         <ul id="list"></ul>
         <br>
-        <button onclick="clear()";> Clear</button>
+        <button onclick="Clear()";> Clear</button>
         
             <script>
              
                 
-                clear=function() {
-                   thelist=document.querySelector("#list");
-                   thelist.innerHTML=""}
+               
                 
                 addtolist= function() {
                    
@@ -84,6 +82,9 @@
                  else
                      this.parentNode.classList.remove("markoff");
                 }
+                      Clear=function() {
+                   thelist=document.querySelector("#list");
+                   thelist.innerHTML=""}
                 </script>
                     
 
